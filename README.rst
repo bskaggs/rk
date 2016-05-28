@@ -99,7 +99,7 @@ User guide
 ==========
 Help
 ----
-The standard output for –help::
+The standard output for --help::
 
     $ rk -h
 
@@ -121,7 +121,7 @@ Example::
 
 Version
 -------
-The standard output for –version::
+The standard output for --version::
 
     $ rk -v
 
@@ -155,9 +155,9 @@ Where:
 
 * ``template`` -- the name of a remote jupyter kernel,
 
-  * ``display_name`` -- a kernel’s name as it should be displayed in the UI. Unlike the kernel name used in the API, this can contain arbitrary unicode characters [1]_,
+  * ``display_name`` -- a kernel's name as it should be displayed in the UI. Unlike the kernel name used in the API, this can contain arbitrary unicode characters [1]_,
   * ``interpreter`` -- an entry point or an absolute path to language interpreter on a remote machine,
-  * ``language`` -- a name of the language of a kernel. When loading notebooks, if no matching kernelspec key (may differ across machines) is found, a kernel with a matching language will be used. This allows a notebook written on any python or julia kernel to be properly associated with the user's python or julia kernel, even if they aren’t listed under the same name as the author’s [1]_,
+  * ``language`` -- a name of the language of a kernel. When loading notebooks, if no matching kernelspec key (may differ across machines) is found, a kernel with a matching language will be used. This allows a notebook written on any python or julia kernel to be properly associated with the user's python or julia kernel, even if they aren't listed under the same name as the author's [1]_,
   * ``remote_host`` -- just a remote host or, if your username is different on a remote machine, use this syntax: remote username AT remote host. 
 
 .. note:: For checking absolute path to language interpreter on a remote machine use a `which <http://unixhelp.ed.ac.uk/CGI/man-cgi?which>`_ Unix command. For example, for the python3 language on a remote machine: ``$ which python3``.
